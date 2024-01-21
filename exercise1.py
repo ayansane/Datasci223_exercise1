@@ -68,10 +68,10 @@ if __name__ == "__main__":
     print(letter_grades(highest=88))
 
     # Question 5
-    student_scores = [100, 99, 90, 84, 66, 53, 47]
+    student_scores2 = [100, 99, 90, 84, 66, 53, 47]
     student_names = ["Joci", "Sara", "Kora", "Jan", "John", "Bern", "Fred"]
 
-    print(student_ranking(student_scores, student_names))
+    print(student_ranking(student_scores2, student_names))
 
     # Question 6
     print(perfect_score(student_info=[
