@@ -26,7 +26,6 @@ def letter_grades(highest: int) -> List[int]:
     while next_highest > 40:
         groups.insert(0, next_highest)
         next_highest = next_highest - interval
-
     return groups
 
 
@@ -45,14 +44,16 @@ def perfect_score(student_info: List[list]) -> List[list]:
 
 if __name__ == "__main__":
     # Define `student_scores`
-    student_scores = [90.33, 40.5, 55.44, 70.05, 30.55, 25.45, 80.45, 95.3, 38.7, 40.3]
+    student_scores = [90.33, 40.5, 55.44, 70.05,
+                      30.55, 25.45, 80.45, 95.3, 38.7, 40.3]
 
     # Question 1
     print(round_scores(student_scores))
 
     # Question 2
     print(
-        count_failed_students(student_scores=[90, 40, 55, 70, 30, 25, 80, 95, 38, 40])
+        count_failed_students(
+            student_scores=[90, 40, 55, 70, 30, 25, 80, 95, 38, 40])
     )
 
     # Question 3
@@ -73,5 +74,6 @@ if __name__ == "__main__":
     print(student_ranking(student_scores, student_names))
 
     # Question 6
-    print(perfect_score(student_info=[["Charles", 90], ["Tony", 80], ["Alex", 100]]))
+    print(perfect_score(student_info=[
+          ["Charles", 90], ["Tony", 80], ["Alex", 100]]))
     print(perfect_score(student_info=[["Charles", 90], ["Tony", 80]]))
